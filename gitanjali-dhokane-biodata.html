@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="color-scheme" content="light" />
 <meta name="description" content="Gitanjali Subhashrao Dhokane — Matrimonial Biodata. B.E. (Computer Engineering) | MBA, Data Engineer at Infosys, Pune." />
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+<meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
 <link rel="icon" href="data:," />
 <title>Gitanjali Dhokane — Matrimonial Biodata</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -171,6 +173,18 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
   .photo-frame p{margin:8px 0 0; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); font-weight:700}
   .photo-frame .line{width:44px; height:2px; background:var(--gold); margin-top:10px; border-radius:2px}
 
+  /* photo gallery */
+  .gallery-featured{text-align:center; margin-bottom:18px}
+  .gallery-featured a{display:block; max-width:560px; margin:0 auto; border-radius:12px; overflow:hidden; border:1px solid var(--line-strong); line-height:0; background:var(--cream-2); aspect-ratio:4/3}
+  .featured-photo{width:100%; height:100%; display:block; object-fit:cover; object-position:center 30%}
+  .gallery-featured figcaption{margin-top:14px; font-family:"Playfair Display",serif; font-size:17px; color:var(--maroon); font-weight:600}
+  #sheet-mr .gallery-featured figcaption{font-family:"Tiro Devanagari Marathi",serif}
+  .gallery-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:10px}
+  @media(min-width:620px){ .gallery-grid{grid-template-columns:repeat(3,1fr); gap:12px} }
+  .gallery-grid a{display:block; border-radius:12px; overflow:hidden; border:1px solid var(--line-strong); line-height:0; background:var(--cream-2); aspect-ratio:4/5}
+  .gallery-grid img{width:100%; height:100%; object-fit:cover; display:block}
+  .gallery-grid a:focus-visible, .gallery-featured a:focus-visible{outline:2px solid var(--gold-dark); outline-offset:3px}
+
   .btn{
     display:inline-flex; align-items:center; justify-content:center; gap:8px;
     text-decoration:none; font-weight:700; font-size:15px; border-radius:999px; padding:12px 20px; border:1px solid transparent; cursor:pointer; transition:.18s ease; text-align:center;
@@ -280,23 +294,33 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
       <!-- PHOTOS -->
       <div class="divider" aria-hidden="true"><i>✦</i></div>
       <h2><span class="num">✦</span> Photos</h2>
-      <p class="section-lead">Photographs are shared in a dedicated album for privacy.</p>
+      <p class="section-lead">A few photographs of Gitanjali. Tap any photo to view it in full.</p>
       <section class="card soft" aria-label="Photos">
-        <div class="photo-hero">
-          <div class="photo-frame" aria-hidden="true">
-            <div class="big">G</div>
-            <p>Gitanjali<br>Dhokane</p>
-            <div class="line"></div>
-          </div>
-          <div>
-            <h3 style="margin:0; font-family:'Playfair Display',serif; font-size:20px; color:var(--maroon)">Gitanjali Biodata &amp; Photos</h3>
-            <p style="margin:8px 0 0; color:var(--muted)">View the photo album on Google Drive. The album opens in a new tab.</p>
-            <div class="btn-row">
-              <a class="btn btn-gold" href="https://drive.google.com/drive/folders/1kWrfV3yV00Wbo1Is2Zh4yq8-ayrhgCwa" target="_blank" rel="noopener">📸 &nbsp;View Photos</a>
-              <a class="btn btn-outline" href="https://www.linkedin.com/in/gitadhokane25" target="_blank" rel="noopener">View LinkedIn Profile</a>
-            </div>
-            <p style="margin:10px 0 0; font-size:13px; color:var(--muted)">If the album appears empty, photos may still be being added by the family. Please contact on WhatsApp below.</p>
-          </div>
+        <figure class="gallery-featured" style="margin-top:0; margin-left:0; margin-right:0">
+          <a href="https://drive.google.com/file/d/1lsfXwJABjBb7IJ1Bn2c-tsEyPZIfCVdf/view" target="_blank" rel="noopener" aria-label="View the Diwali diya photo in full">
+            <img class="featured-photo" src="https://drive.google.com/thumbnail?id=1lsfXwJABjBb7IJ1Bn2c-tsEyPZIfCVdf&amp;sz=w1000" alt="Gitanjali Dhokane in a maroon saree, lighting a diya beside a rangoli" width="1000" height="750">
+          </a>
+          <figcaption>Lighting the Diwali diya</figcaption>
+        </figure>
+        <div class="gallery-grid">
+          <a href="https://drive.google.com/file/d/1H8ACptw4VVytFscdLfuStqe-Nx84ENLT/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1H8ACptw4VVytFscdLfuStqe-Nx84ENLT&amp;sz=w1000" alt="Gitanjali Dhokane — photograph" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/16gvJR-nIzRp5WNJiEIp5n7Vy-yHHZ_xC/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=16gvJR-nIzRp5WNJiEIp5n7Vy-yHHZ_xC&amp;sz=w1000" alt="Gitanjali Dhokane — photograph" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/1lzEKiOBDDsnnHCtzveectgvsSwVMEsAc/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1lzEKiOBDDsnnHCtzveectgvsSwVMEsAc&amp;sz=w1000" alt="Gitanjali Dhokane — photograph" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/1-dAE3Yoks8RHEWxD0hLdTNnE6ramhI1o/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1-dAE3Yoks8RHEWxD0hLdTNnE6ramhI1o&amp;sz=w1000" alt="Gitanjali Dhokane — photograph" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/1cF6N9MlxkqsN_yotjb1EFVTwY20nfIl2/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1cF6N9MlxkqsN_yotjb1EFVTwY20nfIl2&amp;sz=w1000" alt="Gitanjali Dhokane — photograph" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/1ya4RfNznOxSr-1_0PEhwW-cuXVlE8VN6/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1ya4RfNznOxSr-1_0PEhwW-cuXVlE8VN6&amp;sz=w1000" alt="Gitanjali Dhokane — photograph" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/16JRrAEl4Zb2iLKiXcjgKfmi8GGby-q-a/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=16JRrAEl4Zb2iLKiXcjgKfmi8GGby-q-a&amp;sz=w1000" alt="Gitanjali Dhokane — photograph" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/11xjt6plg_HHzpvs3io5K6BGa8EAuVT3h/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=11xjt6plg_HHzpvs3io5K6BGa8EAuVT3h&amp;sz=w1000" alt="Gitanjali Dhokane — photograph" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/1pz0irw8ohFJolDW4J4oRzD4VtSZZvOfH/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1pz0irw8ohFJolDW4J4oRzD4VtSZZvOfH&amp;sz=w1000" alt="Gitanjali Dhokane — photograph" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/1bPBUAc94WDrivGbRSXEUFRca4JPHAQ2N/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1bPBUAc94WDrivGbRSXEUFRca4JPHAQ2N&amp;sz=w1000" alt="Gitanjali Dhokane — photograph" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/1QB2oLfTKvxOkVm8Iv0oQTRFsHj2ekUrA/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1QB2oLfTKvxOkVm8Iv0oQTRFsHj2ekUrA&amp;sz=w1000" alt="Gitanjali Dhokane — photograph" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/1N-T4J0CpkKhaMUF6ULst7fybjP9c5vQ8/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1N-T4J0CpkKhaMUF6ULst7fybjP9c5vQ8&amp;sz=w1000" alt="Gitanjali Dhokane — photograph" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/1QHWdR_a-eKlgpisSMR44UXcSNsoXL5mc/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1QHWdR_a-eKlgpisSMR44UXcSNsoXL5mc&amp;sz=w1000" alt="Gitanjali Dhokane — photograph" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/1YTCQwbxTedrlcTn7ZMWaA_CaO5CdVWeg/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1YTCQwbxTedrlcTn7ZMWaA_CaO5CdVWeg&amp;sz=w1000" alt="Gitanjali Dhokane — photograph" width="800" height="1000"></a>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-gold" href="https://drive.google.com/drive/folders/1kWrfV3yV00Wbo1Is2Zh4yq8-ayrhgCwa" target="_blank" rel="noopener">📸 &nbsp;View Full Album on Google Drive</a>
+          <a class="btn btn-outline" href="https://www.linkedin.com/in/gitadhokane25" target="_blank" rel="noopener">View LinkedIn Profile</a>
         </div>
       </section>
 
@@ -489,23 +513,33 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
       <!-- PHOTOS -->
       <div class="divider" aria-hidden="true"><i>✦</i></div>
       <h2><span class="num">✦</span> फोटो</h2>
-      <p class="section-lead">गोपनीयतेसाठी फोटो स्वतंत्र अल्बममध्ये दिले आहेत.</p>
+      <p class="section-lead">गितांजलीचे काही फोटो. कोणताही फोटो मोठा पाहण्यासाठी त्यावर टॅप करा.</p>
       <section class="card soft" aria-label="फोटो">
-        <div class="photo-hero">
-          <div class="photo-frame" aria-hidden="true">
-            <div class="big">गि</div>
-            <p>गितांजली<br>ढोकणे</p>
-            <div class="line"></div>
-          </div>
-          <div>
-            <h3 style="margin:0; font-family:'Tiro Devanagari Marathi',serif; font-size:20px; color:var(--maroon)">गितांजली बायोडेटा व फोटो</h3>
-            <p style="margin:8px 0 0; color:var(--muted)">Google Drive वरील फोटो अल्बम पहा. अल्बम नवीन टॅबमध्ये उघडेल.</p>
-            <div class="btn-row">
-              <a class="btn btn-gold" href="https://drive.google.com/drive/folders/1kWrfV3yV00Wbo1Is2Zh4yq8-ayrhgCwa" target="_blank" rel="noopener">📸 &nbsp;फोटो पहा</a>
-              <a class="btn btn-outline" href="https://www.linkedin.com/in/gitadhokane25" target="_blank" rel="noopener">LinkedIn प्रोफाइल पहा</a>
-            </div>
-            <p style="margin:10px 0 0; font-size:13px; color:var(--muted)">अल्बम रिकामा दिसल्यास, कुटुंबाकडून फोटो अजून जोडले जात असतील. कृपया खाली WhatsApp वर संपर्क साधा.</p>
-          </div>
+        <figure class="gallery-featured" style="margin-top:0; margin-left:0; margin-right:0">
+          <a href="https://drive.google.com/file/d/1lsfXwJABjBb7IJ1Bn2c-tsEyPZIfCVdf/view" target="_blank" rel="noopener" aria-label="दिवाळीचा दिवा लावतानाचा फोटो मोठा पहा">
+            <img class="featured-photo" src="https://drive.google.com/thumbnail?id=1lsfXwJABjBb7IJ1Bn2c-tsEyPZIfCVdf&amp;sz=w1000" alt="गितांजली ढोकणे — मरून साडीत रांगोळीजवळ दिवा लावताना" width="1000" height="750">
+          </a>
+          <figcaption>दिवाळीचा दिवा लावताना</figcaption>
+        </figure>
+        <div class="gallery-grid">
+          <a href="https://drive.google.com/file/d/1H8ACptw4VVytFscdLfuStqe-Nx84ENLT/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1H8ACptw4VVytFscdLfuStqe-Nx84ENLT&amp;sz=w1000" alt="गितांजली ढोकणे — फोटो" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/16gvJR-nIzRp5WNJiEIp5n7Vy-yHHZ_xC/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=16gvJR-nIzRp5WNJiEIp5n7Vy-yHHZ_xC&amp;sz=w1000" alt="गितांजली ढोकणे — फोटो" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/1lzEKiOBDDsnnHCtzveectgvsSwVMEsAc/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1lzEKiOBDDsnnHCtzveectgvsSwVMEsAc&amp;sz=w1000" alt="गितांजली ढोकणे — फोटो" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/1-dAE3Yoks8RHEWxD0hLdTNnE6ramhI1o/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1-dAE3Yoks8RHEWxD0hLdTNnE6ramhI1o&amp;sz=w1000" alt="गितांजली ढोकणे — फोटो" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/1cF6N9MlxkqsN_yotjb1EFVTwY20nfIl2/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1cF6N9MlxkqsN_yotjb1EFVTwY20nfIl2&amp;sz=w1000" alt="गितांजली ढोकणे — फोटो" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/1ya4RfNznOxSr-1_0PEhwW-cuXVlE8VN6/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1ya4RfNznOxSr-1_0PEhwW-cuXVlE8VN6&amp;sz=w1000" alt="गितांजली ढोकणे — फोटो" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/16JRrAEl4Zb2iLKiXcjgKfmi8GGby-q-a/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=16JRrAEl4Zb2iLKiXcjgKfmi8GGby-q-a&amp;sz=w1000" alt="गितांजली ढोकणे — फोटो" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/11xjt6plg_HHzpvs3io5K6BGa8EAuVT3h/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=11xjt6plg_HHzpvs3io5K6BGa8EAuVT3h&amp;sz=w1000" alt="गितांजली ढोकणे — फोटो" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/1pz0irw8ohFJolDW4J4oRzD4VtSZZvOfH/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1pz0irw8ohFJolDW4J4oRzD4VtSZZvOfH&amp;sz=w1000" alt="गितांजली ढोकणे — फोटो" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/1bPBUAc94WDrivGbRSXEUFRca4JPHAQ2N/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1bPBUAc94WDrivGbRSXEUFRca4JPHAQ2N&amp;sz=w1000" alt="गितांजली ढोकणे — फोटो" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/1QB2oLfTKvxOkVm8Iv0oQTRFsHj2ekUrA/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1QB2oLfTKvxOkVm8Iv0oQTRFsHj2ekUrA&amp;sz=w1000" alt="गितांजली ढोकणे — फोटो" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/1N-T4J0CpkKhaMUF6ULst7fybjP9c5vQ8/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1N-T4J0CpkKhaMUF6ULst7fybjP9c5vQ8&amp;sz=w1000" alt="गितांजली ढोकणे — फोटो" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/1QHWdR_a-eKlgpisSMR44UXcSNsoXL5mc/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1QHWdR_a-eKlgpisSMR44UXcSNsoXL5mc&amp;sz=w1000" alt="गितांजली ढोकणे — फोटो" width="800" height="1000"></a>
+          <a href="https://drive.google.com/file/d/1YTCQwbxTedrlcTn7ZMWaA_CaO5CdVWeg/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1YTCQwbxTedrlcTn7ZMWaA_CaO5CdVWeg&amp;sz=w1000" alt="गितांजली ढोकणे — फोटो" width="800" height="1000"></a>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-gold" href="https://drive.google.com/drive/folders/1kWrfV3yV00Wbo1Is2Zh4yq8-ayrhgCwa" target="_blank" rel="noopener">📸 &nbsp;संपूर्ण अल्बम Google Drive वर पहा</a>
+          <a class="btn btn-outline" href="https://www.linkedin.com/in/gitadhokane25" target="_blank" rel="noopener">LinkedIn प्रोफाइल पहा</a>
         </div>
       </section>
 
@@ -683,7 +717,7 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
 
 <script>
 (function(){
-  var pageUrl = window.location.href;
+  var pageUrl = "https://sequex.co.in/gitanjali-dhokane-biodata.html";
   var TITLES = {
     en: "Gitanjali Dhokane — Matrimonial Biodata",
     mr: "कु. गितांजली ढोकणे — परिचय पत्र"
