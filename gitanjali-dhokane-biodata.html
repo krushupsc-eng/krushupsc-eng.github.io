@@ -209,6 +209,12 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
   #qrcode{display:inline-grid; place-items:center; min-width:148px; min-height:148px; padding:10px; background:#fff; border:1px solid var(--line); border-radius:10px}
   #qrcode img, #qrcode canvas{display:block} #qrcode svg{display:block;width:160px;height:160px}
   .qr-wrap p{margin:10px 0 0; font-size:13px; color:var(--muted); font-weight:600}
+  .qr-bottom{display:flex; justify-content:center; margin:22px 18px 26px}
+  .qr-bottom .qr-wrap{width:100%; max-width:340px}
+  .request-note{margin-top:16px; color:var(--ink); font-size:14.5px; line-height:1.65; background:#fff8e8; border:1px dashed var(--line-strong); border-radius:10px; padding:12px 14px}
+  .request-note strong{color:var(--maroon)}
+  .wa-inline{color:var(--maroon); font-weight:700; text-decoration:none; border-bottom:1px solid var(--gold-light)}
+  .contact-person{margin:16px 0 0; font-weight:700; font-size:15px}
   .share-grid{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:12px}
   .share-grid .btn{width:100%; padding:12px 10px; font-size:14px}
   .toast{
@@ -336,7 +342,7 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
           <div class="row"><dt>Mother</dt><dd>Late Smt. Latabai Subhashrao Patil Dhokane</dd></div>
           <div class="row"><dt>Grandfather</dt><dd>Shri. Nivrutti Rakhmaji Patil Dhokane <small>(Guruji)</small></dd></div>
           <div class="row"><dt>Grandmother</dt><dd>Smt. Kusumbai Nivrutti Patil Dhokane</dd></div>
-          <div class="row"><dt>Uncle (Chulte)</dt><dd>Shri. Dnyaneshwar Nivrutti Patil Dhokane <small>Mob. 9423749232</small></dd></div>
+          <div class="row"><dt>Uncle (Chulte)</dt><dd>Shri. Dnyaneshwar Nivrutti Patil Dhokane <small>Mob. <a class="wa-inline" href="https://wa.me/919423749232" target="_blank" rel="noopener">9423749232</a> (WhatsApp) &nbsp;·&nbsp; <a class="wa-inline" href="tel:+919423749232">Call</a></small></dd></div>
           <div class="row"><dt>Aunt (Chulti)</dt><dd>Smt. Ashabai Dnyaneshwar Patil Dhokane</dd></div>
         </dl>
       </section>
@@ -352,7 +358,7 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
             <div>
               <span class="pill">Brother</span>
               <h3>Krushna Subhashrao Dhokane</h3>
-              <p>MBA &nbsp;•&nbsp; Mob. <a href="tel:+917517758777">7517758777</a></p>
+              <p>MBA &nbsp;•&nbsp; Mob. <a href="tel:+917517758777">7517758777</a> (WhatsApp)</p>
               <p><a href="https://www.linkedin.com/in/krushna-d-4529ab156" target="_blank" rel="noopener">LinkedIn Profile →</a></p>
             </div>
           </div>
@@ -414,33 +420,34 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
       <h2><span class="num">✆</span> Contact &amp; Share</h2>
       <p class="section-lead">For enquiries, please contact the family on WhatsApp or call. Scan the QR code to open this biodata anytime.</p>
 
-      <div class="contact-grid">
+      <div class="contact-grid" style="grid-template-columns:1fr">
         <section class="card soft" aria-label="Contact" style="margin-bottom:0">
           <h3 style="margin:0 0 6px; font-family:'Playfair Display',serif; color:var(--maroon); font-size:19px">Family Contact</h3>
-          <p style="margin:0; font-weight:600">Krushna Dhokane (Brother)</p>
+          <p style="margin:0; font-weight:600">Krushna Dhokane (Brother) — WhatsApp &amp; Call</p>
           <p style="margin:4px 0 0; color:var(--muted); font-size:14.5px">📍 Gopalpur, Tal. Newasa,<br>Dist. Ahilyanagar, Maharashtra</p>
-          <p style="margin:8px 0 0; font-size:14.5px">Uncle: Shri. Dnyaneshwar Patil Dhokane — <strong>9423749232</strong></p>
 
           <div class="btn-row">
             <a class="btn btn-whatsapp" href="https://wa.me/917517758777?text=Namaskar%2C%20I%20saw%20Gitanjali%20Dhokane%27s%20biodata%20and%20would%20like%20to%20enquire." target="_blank" rel="noopener">💬 WhatsApp — 7517758777</a>
-            <a class="btn btn-maroon" href="tel:+917517758777">📞 Call Now</a>
+            <a class="btn btn-maroon" href="tel:+917517758777">📞 Call — 7517758777</a>
           </div>
 
+          <p class="contact-person">Shri. Dnyaneshwar Patil Dhokane (Uncle) — WhatsApp &amp; Call</p>
+          <div class="btn-row">
+            <a class="btn btn-whatsapp" href="https://wa.me/919423749232?text=Namaskar%2C%20I%20saw%20Gitanjali%20Dhokane%27s%20biodata%20and%20would%20like%20to%20enquire." target="_blank" rel="noopener">💬 WhatsApp — 9423749232</a>
+            <a class="btn btn-maroon" href="tel:+919423749232">📞 Call — 9423749232</a>
+          </div>
+
+          <p class="request-note"><strong>A humble request:</strong> Before calling or messaging on WhatsApp, please first share the groom's biodata on the WhatsApp number above.</p>
+
           <h3 style="margin:20px 0 6px; font-family:'Playfair Display',serif; color:var(--maroon); font-size:17px">Share this Biodata</h3>
-          <p style="margin:0; color:var(--muted); font-size:14px">Share with family on WhatsApp or Telegram, or copy the link.</p>
+          <p style="margin:0; color:var(--muted); font-size:14px">Share with family on WhatsApp or Telegram.</p>
           <div class="share-grid">
             <button class="btn btn-maroon js-share" type="button">↗ &nbsp;Share</button>
-            <button class="btn btn-outline js-copy" type="button">🔗 &nbsp;Copy Link</button>
             <a class="btn btn-whatsapp js-wa" href="#" target="_blank" rel="noopener">WhatsApp Share</a>
             <a class="btn btn-outline js-tg" href="#" target="_blank" rel="noopener">Telegram Share</a>
           </div>
         </section>
 
-        <aside class="qr-wrap" aria-label="QR code">
-          <div id="qrcode" aria-label="QR code for this biodata page"></div>
-          <p>Scan to open this biodata<br>on your phone</p>
-          <p style="font-size:12px; font-weight:500; margin-top:6px">Print this page and the QR code<br>works on the printed biodata too.</p>
-        </aside>
       </div>
 
     </div>
@@ -451,6 +458,13 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
       <p style="margin:4px 0 0">Gopalpur • Newasa • Ahilyanagar • Pune</p>
       <p style="margin:6px 0 0; font-size:12px">Biodata shared by the Dhokane family for matrimonial enquiries only.</p>
     </footer>
+
+    <div class="qr-bottom">
+      <aside class="qr-wrap" aria-label="QR code">
+        <div id="qrcode" aria-label="QR code for this biodata page"></div>
+        <p>Scan to view photos &amp; full biodata online</p>
+      </aside>
+    </div>
 
   </article>
 
@@ -538,7 +552,7 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
           <div class="row"><dt>आई</dt><dd>कै. लताबाई सुभाषराव पा. ढोकणे</dd></div>
           <div class="row"><dt>आजोबा</dt><dd>श्री. निवृत्ती रखमाजी पा. ढोकणे <small>(गुरुजी)</small></dd></div>
           <div class="row"><dt>आजी</dt><dd>सौ. कुसुमबाई निवृत्ती पा. ढोकणे</dd></div>
-          <div class="row"><dt>चुलते</dt><dd>श्री. ज्ञानेश्वर निवृत्ती पा. ढोकणे <small>मो. नं. 9423749232</small></dd></div>
+          <div class="row"><dt>चुलते</dt><dd>श्री. ज्ञानेश्वर निवृत्ती पा. ढोकणे <small>मो. नं. <a class="wa-inline" href="https://wa.me/919423749232" target="_blank" rel="noopener">9423749232</a> (WhatsApp) &nbsp;·&nbsp; <a class="wa-inline" href="tel:+919423749232">फोन करा</a></small></dd></div>
           <div class="row"><dt>चुलती</dt><dd>सौ. आशाबाई ज्ञानेश्वर पा. ढोकणे</dd></div>
         </dl>
       </section>
@@ -554,7 +568,7 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
             <div>
               <span class="pill">भाऊ</span>
               <h3>चि. कृष्णा सुभाषराव पा. ढोकणे</h3>
-              <p>M.B.A. &nbsp;•&nbsp; मो. नं. <a href="tel:+917517758777">7517758777</a></p>
+              <p>M.B.A. &nbsp;•&nbsp; मो. नं. <a href="tel:+917517758777">7517758777</a> (WhatsApp)</p>
               <p><a href="https://www.linkedin.com/in/krushna-d-4529ab156" target="_blank" rel="noopener">LinkedIn प्रोफाइल →</a></p>
             </div>
           </div>
@@ -616,33 +630,34 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
       <h2><span class="num">✆</span> संपर्क व शेअर</h2>
       <p class="section-lead">चौकशीसाठी कृपया कुटुंबाशी WhatsApp वर किंवा फोनवर संपर्क साधा. हा परिचय पत्र कधीही उघडण्यासाठी QR कोड स्कॅन करा.</p>
 
-      <div class="contact-grid">
+      <div class="contact-grid" style="grid-template-columns:1fr">
         <section class="card soft" aria-label="संपर्क" style="margin-bottom:0">
           <h3 style="margin:0 0 6px; font-family:'Tiro Devanagari Marathi',serif; color:var(--maroon); font-size:19px">कुटुंब संपर्क</h3>
-          <p style="margin:0; font-weight:600">कृष्णा ढोकणे (भाऊ)</p>
+          <p style="margin:0; font-weight:600">कृष्णा ढोकणे (भाऊ) — WhatsApp व फोन</p>
           <p style="margin:4px 0 0; color:var(--muted); font-size:14.5px">📍 गोपाळपुर, ता. नेवासा,<br>जि. अहिल्यानगर, महाराष्ट्र</p>
-          <p style="margin:8px 0 0; font-size:14.5px">चुलते: श्री. ज्ञानेश्वर पा. ढोकणे — <strong>9423749232</strong></p>
 
           <div class="btn-row">
             <a class="btn btn-whatsapp" href="https://wa.me/917517758777?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0%2C%20%E0%A4%AE%E0%A5%80%20%E0%A4%95%E0%A5%81.%20%E0%A4%97%E0%A4%BF%E0%A4%A4%E0%A4%BE%E0%A4%82%E0%A4%9C%E0%A4%B2%E0%A5%80%20%E0%A4%A2%E0%A5%8B%E0%A4%95%E0%A4%A3%E0%A5%87%20%E0%A4%AF%E0%A4%BE%E0%A4%82%E0%A4%9A%E0%A4%BE%20%E0%A4%AA%E0%A4%B0%E0%A4%BF%E0%A4%9A%E0%A4%AF%20%E0%A4%AA%E0%A4%A4%E0%A5%8D%E0%A4%B0%20%E0%A4%AA%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%B2%E0%A4%BE%20%E0%A4%86%E0%A4%A3%E0%A4%BF%20%E0%A4%9A%E0%A5%8C%E0%A4%95%E0%A4%B6%E0%A5%80%20%E0%A4%95%E0%A4%B0%E0%A4%BE%E0%A4%AF%E0%A4%9A%E0%A5%80%20%E0%A4%86%E0%A4%B9%E0%A5%87." target="_blank" rel="noopener">💬 WhatsApp — 7517758777</a>
-            <a class="btn btn-maroon" href="tel:+917517758777">📞 फोन करा</a>
+            <a class="btn btn-maroon" href="tel:+917517758777">📞 फोन करा — 7517758777</a>
           </div>
 
+          <p class="contact-person">श्री. ज्ञानेश्वर पा. ढोकणे (चुलते) — WhatsApp व फोन</p>
+          <div class="btn-row">
+            <a class="btn btn-whatsapp" href="https://wa.me/919423749232?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0%2C%20%E0%A4%AE%E0%A5%80%20%E0%A4%95%E0%A5%81.%20%E0%A4%97%E0%A4%BF%E0%A4%A4%E0%A4%BE%E0%A4%82%E0%A4%9C%E0%A4%B2%E0%A5%80%20%E0%A4%A2%E0%A5%8B%E0%A4%95%E0%A4%A3%E0%A5%87%20%E0%A4%AF%E0%A4%BE%E0%A4%82%E0%A4%9A%E0%A4%BE%20%E0%A4%AA%E0%A4%B0%E0%A4%BF%E0%A4%9A%E0%A4%AF%20%E0%A4%AA%E0%A4%A4%E0%A5%8D%E0%A4%B0%20%E0%A4%AA%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%B2%E0%A4%BE%20%E0%A4%86%E0%A4%A3%E0%A4%BF%20%E0%A4%9A%E0%A5%8C%E0%A4%95%E0%A4%B6%E0%A5%80%20%E0%A4%95%E0%A4%B0%E0%A4%BE%E0%A4%AF%E0%A4%9A%E0%A5%80%20%E0%A4%86%E0%A4%B9%E0%A5%87." target="_blank" rel="noopener">💬 WhatsApp — 9423749232</a>
+            <a class="btn btn-maroon" href="tel:+919423749232">📞 फोन करा — 9423749232</a>
+          </div>
+
+          <p class="request-note"><strong>नम्र विनंती:</strong> कृपया कॉल किंवा WhatsApp करण्यापूर्वी, मुलाचा बायोडेटा (परिचय पत्र) प्रथम वरील WhatsApp नंबरवर पाठवा.</p>
+
           <h3 style="margin:20px 0 6px; font-family:'Tiro Devanagari Marathi',serif; color:var(--maroon); font-size:17px">हा परिचय पत्र शेअर करा</h3>
-          <p style="margin:0; color:var(--muted); font-size:14px">WhatsApp किंवा Telegram वर कुटुंबासोबत शेअर करा, किंवा लिंक कॉपी करा.</p>
+          <p style="margin:0; color:var(--muted); font-size:14px">WhatsApp किंवा Telegram वर कुटुंबासोबत शेअर करा.</p>
           <div class="share-grid">
             <button class="btn btn-maroon js-share" type="button">↗ &nbsp;शेअर करा</button>
-            <button class="btn btn-outline js-copy" type="button">🔗 &nbsp;लिंक कॉपी करा</button>
             <a class="btn btn-whatsapp js-wa" href="#" target="_blank" rel="noopener">WhatsApp शेअर</a>
             <a class="btn btn-outline js-tg" href="#" target="_blank" rel="noopener">Telegram शेअर</a>
           </div>
         </section>
 
-        <aside class="qr-wrap" aria-label="QR कोड">
-          <div id="qrcode-mr" class="qr-box" aria-label="या परिचय पत्राचा QR कोड"></div>
-          <p>तुमच्या फोनवर हा परिचय पत्र<br>उघडण्यासाठी स्कॅन करा</p>
-          <p style="font-size:12px; font-weight:500; margin-top:6px">हे पान प्रिंट केले तरी<br>QR कोड छापील प्रतीवरही चालतो.</p>
-        </aside>
       </div>
 
     </div>
@@ -653,6 +668,13 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
       <p style="margin:4px 0 0">गोपाळपुर • नेवासा • अहिल्यानगर • पुणे</p>
       <p style="margin:6px 0 0; font-size:12px">हा परिचय पत्र ढोकणे कुटुंबाने केवळ विवाहविषयक चौकशीसाठी दिला आहे.</p>
     </footer>
+
+    <div class="qr-bottom">
+      <aside class="qr-wrap" aria-label="QR कोड">
+        <div id="qrcode-mr" class="qr-box" aria-label="या परिचय पत्राचा QR कोड"></div>
+        <p>फोटो व संपूर्ण परिचय पत्र पाहण्यासाठी QR कोड स्कॅन करा</p>
+      </aside>
+    </div>
 
   </article>
 </div>
@@ -670,13 +692,9 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
     en: "Matrimonial Biodata — Gitanjali Subhashrao Dhokane, Data Engineer at Infosys, Pune.",
     mr: "परिचय पत्र — कु. गितांजली सुभाषराव पा. ढोकणे, Data Engineer, Infosys, पुणे."
   };
-  var TOAST_COPIED = {
-    en: "✓ Link copied — paste anywhere to share",
-    mr: "✓ लिंक कॉपी झाली — शेअर करण्यासाठी कुठेही पेस्ट करा"
-  };
-  var TOAST_COPY = {
-    en: "Copy this link: ",
-    mr: "ही लिंक कॉपी करा: "
+  var SHARE_HINT = {
+    en: "Use WhatsApp or Telegram share below — or scan the QR code at the bottom",
+    mr: "खाली WhatsApp किंवा Telegram शेअर वापरा — किंवा सर्वात खालचा QR कोड स्कॅन करा"
   };
   var QR_FAIL = {
     en: '<span style="font-size:13px;color:#6b5d4f;padding:12px;text-align:center">QR code could not<br>be generated</span>',
@@ -709,19 +727,6 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
     toastTimer = setTimeout(function(){ toast.classList.remove("show"); }, 2400);
   }
 
-  function copyLink(){
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(pageUrl).then(function(){ showToast(TOAST_COPIED[lang]); }).catch(function(){ fallbackCopy(); });
-    } else { fallbackCopy(); }
-  }
-  function fallbackCopy(){
-    var ta = document.createElement("textarea");
-    ta.value = pageUrl; ta.style.position="fixed"; ta.style.opacity="0";
-    document.body.appendChild(ta); ta.select();
-    try { document.execCommand("copy"); showToast(TOAST_COPIED[lang]); } catch(e){ showToast(TOAST_COPY[lang] + pageUrl); }
-    document.body.removeChild(ta);
-  }
-
   function refreshShareLinks(){
     var shareText = TITLES[lang] + "\n" + pageUrl;
     var waLinks = document.querySelectorAll(".js-wa");
@@ -735,11 +740,9 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
     shareBtns[s].addEventListener("click", function(){
       if (navigator.share) {
         navigator.share({ title: TITLES[lang], text: SHARE_DESC[lang], url: pageUrl }).catch(function(){});
-      } else { copyLink(); }
+      } else { showToast(SHARE_HINT[lang]); }
     });
   }
-  var copyBtns = document.querySelectorAll(".js-copy");
-  for (var c = 0; c < copyBtns.length; c++) copyBtns[c].addEventListener("click", copyLink);
 
   // Language toggle
   var sheetEn = document.getElementById("sheet-en");
