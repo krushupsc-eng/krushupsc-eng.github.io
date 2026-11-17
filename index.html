@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SEQUEX — Games, Apps, Books & Civic Tech</title>
-<meta name="description" content="SEQUEX builds mobile games, Android apps, coloring and storybooks for Amazon KDP, and digital tools for urban local bodies. Based in Chhatrapati Sambhajinagar, Maharashtra.">
+<title>SEQUEX — Apps, Games & Books by Foundry Enterprises</title>
+<meta name="description" content="SEQUEX is the app and game studio of Foundry Enterprises, Maharashtra. Practical Android apps for contractors, petrol pumps, field teams, election candidates and gully cricket — plus puzzle games and books on Amazon KDP.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -35,9 +35,9 @@
     radial-gradient(500px 300px at 85% 20%,rgba(138,107,255,.25),transparent 70%),
     radial-gradient(400px 260px at 10% 90%,rgba(77,212,255,.15),transparent 70%);pointer-events:none}
   .tag{display:inline-block;font-size:13px;font-weight:600;color:var(--c1);border:1px solid rgba(255,204,51,.35);border-radius:999px;padding:5px 14px;margin-bottom:22px}
-  h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(36px,6vw,64px);line-height:1.08;max-width:780px}
+  h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(36px,6vw,64px);line-height:1.08;max-width:820px}
   h1 span{background:linear-gradient(90deg,var(--c1),var(--c2),var(--c4));-webkit-background-clip:text;background-clip:text;color:transparent}
-  .lead{font-size:clamp(16px,2vw,19px);color:var(--muted);max-width:640px;margin-top:22px}
+  .lead{font-size:clamp(16px,2vw,19px);color:var(--muted);max-width:680px;margin-top:22px}
   .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
   .btn{padding:13px 24px;border-radius:10px;font-weight:600;font-size:15px}
   .btn.primary{background:var(--text);color:var(--bg)}
@@ -47,7 +47,7 @@
   section{padding:80px 0}
   .alt{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
   h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(28px,4vw,38px);margin-bottom:12px}
-  .sub{color:var(--muted);max-width:620px;margin-bottom:44px}
+  .sub{color:var(--muted);max-width:640px;margin-bottom:44px}
   .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
   .books{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
   .book{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px;display:flex;gap:20px;align-items:flex-start}
@@ -63,14 +63,24 @@
   .card h3{font-family:'Space Grotesk',sans-serif;font-size:20px;margin-bottom:8px}
   .card p{color:var(--muted);font-size:15px}
 
-  .product{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-  .board{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;max-width:340px;margin:0 auto}
-  .board b{aspect-ratio:1;border-radius:10px;background:var(--card);border:1px solid var(--line);display:grid;place-items:center;font-family:'Space Grotesk',sans-serif;font-size:20px}
-  .board b.p{background:rgba(138,107,255,.35);border-color:var(--c4)}
-  .board b.n{background:var(--c1);color:var(--bg);border-color:var(--c1)}
+  /* ===== Apps ===== */
+  .apps{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+  .app-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px;display:flex;flex-direction:column}
+  .app-head{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+  .app-head .icon{margin-bottom:0;flex:0 0 46px}
+  .app-head h3{font-family:'Space Grotesk',sans-serif;font-size:20px;line-height:1.25}
+  .app-head .for{font-size:13px;color:var(--muted)}
+  .app-card p{color:var(--muted);font-size:15px;flex:1}
+  .app-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px;flex-wrap:wrap}
+  .badge{display:inline-block;font-size:12px;font-weight:600;padding:4px 11px;border-radius:999px}
+  .badge.soon{background:rgba(77,212,255,.14);color:var(--c3)}
+  .badge.pilot{background:rgba(255,204,51,.16);color:var(--c1)}
+  .badge.test{background:rgba(138,107,255,.18);color:#b9a5ff}
+  .app-link{color:var(--c3);font-weight:600;font-size:14px}
+
   .pill{display:inline-block;font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px;background:rgba(77,212,255,.15);color:var(--c3);margin-bottom:14px}
-  .product p{color:var(--muted);margin:14px 0 22px}
-  .product a.u{color:var(--c3);font-weight:600;font-size:15px}
+  .about p{color:var(--muted);max-width:720px;margin-bottom:16px;font-size:16px}
+  .about p strong{color:var(--text)}
 
   .contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
   .contact .card a{color:var(--c1);font-weight:600;word-break:break-word}
@@ -78,10 +88,11 @@
 
   footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
   footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  footer .flinks{display:flex;gap:18px;flex-wrap:wrap}
+  footer .flinks a:hover{color:var(--text)}
 
   @media (max-width:760px){
     .links{display:none}
-    .product{grid-template-columns:1fr}
     .hero{padding:64px 0 56px}
     section{padding:60px 0}
   }
@@ -93,10 +104,10 @@
   <nav class="wrap">
     <a href="#" class="logo"><span class="dots"><i></i><i></i><i></i><i></i></span>SEQUEX</a>
     <div class="links">
-      <a href="#what">What we build</a>
-      <a href="#ai">How we build</a>
-      <a href="#games">Games</a>
+      <a href="#apps">Apps</a>
+      <a href="#services">Services</a>
       <a href="#books">Books</a>
+      <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
@@ -104,89 +115,149 @@
 
 <div class="hero">
   <div class="wrap">
-    <span class="tag">AI-first studio · Games · Apps · Books · Civic Tech</span>
-    <h1>We create <span>playful games, books</span> and practical software for real-world problems.</h1>
-    <p class="lead">SEQUEX is an AI-first creative studio from Chhatrapati Sambhajinagar, Maharashtra, focused on new app and game development. Using the latest AI tools, we design mobile puzzle games, Android apps, coloring books and storybooks for children and adults, and digital tools that help urban local bodies work faster and more transparently.</p>
+    <span class="tag">Foundry Enterprises · Apps · Games · Books · Civic Tech</span>
+    <h1>Practical apps for <span>the field, the counter</span> and everyday life.</h1>
+    <p class="lead">SEQUEX is the app and game studio of Foundry Enterprises, from Nevasa, Maharashtra. We turn real on-ground problems — a contractor's billing evidence, a petrol pump's daily shift, a candidate's voter list, a gully cricket match — into simple Android apps that work offline, in English, मराठी and हिन्दी.</p>
     <div class="cta">
-      <a href="#what" class="btn primary">See what we build</a>
+      <a href="#apps" class="btn primary">See our apps</a>
       <a href="mailto:krushna@sequex.co.in" class="btn ghost">Get in touch</a>
     </div>
   </div>
 </div>
 
-<section id="what">
+<section id="apps">
   <div class="wrap">
-    <h2>What we build</h2>
-    <p class="sub">Four focus areas, one goal: work that is simple to use, delightful, and genuinely useful.</p>
+    <h2>Our apps</h2>
+    <p class="sub">Every app starts as a real problem faced by real people, gets tested with them in the field, and keeps improving from their feedback.</p>
+
+    <!-- ============================================================
+         ADD A NEW APP: copy one <article class="app-card"> block below,
+         change the icon, name, "for" line, description, badge and link.
+         Badge classes: .soon (Coming soon) · .pilot (In field pilot) ·
+         .test (In testing on Google Play)
+         ============================================================ -->
+    <div class="apps">
+
+      <article class="app-card">
+        <div class="app-head">
+          <div class="icon" style="background:rgba(77,212,255,.15)">📋</div>
+          <div>
+            <h3>Nond — Work Evidence App</h3>
+            <div class="for">For contractors &amp; site teams</div>
+          </div>
+        </div>
+        <p>Capture Before, During and After photos with GPS and time stamps, and turn them into print-ready A4 evidence sheets for billing. Works fully offline — no signal needed on site.</p>
+        <div class="app-foot">
+          <span class="badge soon">Coming soon on Google Play</span>
+        </div>
+      </article>
+
+      <article class="app-card">
+        <div class="app-head">
+          <div class="icon" style="background:rgba(255,204,51,.15)">⛽</div>
+          <div>
+            <h3>PumpProof</h3>
+            <div class="for">For petrol pump owners &amp; staff</div>
+          </div>
+        </div>
+        <p>The complete petrol pump manager: shift closing with photo proof, dip and density readings, credit ledger with WhatsApp reminders, tanker shortage checks and DSR reports — designed with real pump owners.</p>
+        <div class="app-foot">
+          <span class="badge pilot">In field pilot</span>
+        </div>
+      </article>
+
+      <article class="app-card">
+        <div class="app-head">
+          <div class="icon" style="background:rgba(255,92,138,.15)">📍</div>
+          <div>
+            <h3>GPS Map Camera</h3>
+            <div class="for">For field work, surveys &amp; inspections</div>
+          </div>
+        </div>
+        <p>A camera that stamps every photo with its GPS location, address, date and time — proof-grade photos for field documentation, surveys and site inspections.</p>
+        <div class="app-foot">
+          <span class="badge soon">Coming soon on Google Play</span>
+        </div>
+      </article>
+
+      <article class="app-card">
+        <div class="app-head">
+          <div class="icon" style="background:rgba(138,107,255,.18)">🏏</div>
+          <div>
+            <h3>GullyCaptain</h3>
+            <div class="for">For gully &amp; box cricket teams</div>
+          </div>
+        </div>
+        <p>Scoring and management for gully and box cricket: start a match in under a minute, score ball by ball fully offline, and run tournaments with points tables and player stats.</p>
+        <div class="app-foot">
+          <span class="badge soon">Coming soon on Google Play</span>
+          <a class="app-link" href="/gullycaptain-privacy/">Privacy policy →</a>
+        </div>
+      </article>
+
+      <article class="app-card">
+        <div class="app-head">
+          <div class="icon" style="background:rgba(77,212,255,.15)">🗳️</div>
+          <div>
+            <h3>निवडणूक साथी · Nivadnuk Sathi</h3>
+            <div class="for">For Gram Panchayat election candidates</div>
+          </div>
+        </div>
+        <p>An offline campaign companion for candidates in Maharashtra: voter lists, door-to-door canvassing, voter slips, team coordination and expense tracking — Marathi first, and no internet needed.</p>
+        <div class="app-foot">
+          <span class="badge soon">Coming soon</span>
+        </div>
+      </article>
+
+      <article class="app-card">
+        <div class="app-head">
+          <div class="icon" style="background:rgba(255,204,51,.15)">🔢</div>
+          <div>
+            <h3>Sequex: Number Puzzle</h3>
+            <div class="for">A puzzle game for everyone</div>
+          </div>
+        </div>
+        <p>Draw a single path through the grid and pass every numbered checkpoint in order. Simple rules, satisfying solutions, and puzzles that grow with you. Works fully offline.</p>
+        <div class="app-foot">
+          <span class="badge test">In testing on Google Play</span>
+          <a class="app-link" href="/sequex/">Game website &amp; privacy →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="services" class="alt">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <p class="sub">Alongside our own products, we build software and content for businesses, institutions and civic programmes.</p>
     <div class="grid">
       <div class="card">
-        <div class="icon" style="background:rgba(255,204,51,.15)">🎮</div>
-        <h3>Mobile Games</h3>
-        <p>Clean, offline-friendly puzzle games that are easy to learn and hard to put down, starting with Sequex: Number Puzzle.</p>
-      </div>
-      <div class="card">
         <div class="icon" style="background:rgba(255,92,138,.15)">📱</div>
-        <h3>Android Apps</h3>
-        <p>Lightweight apps for the Google Play Store, built for everyday users and designed to work well on any phone.</p>
-      </div>
-      <div class="card">
-        <div class="icon" style="background:rgba(138,107,255,.18)">📚</div>
-        <h3>Books &amp; KDP Designs</h3>
-        <p>Coloring books for kids and adults, illustrated storybooks, and print-ready interiors and covers designed for Amazon KDP.</p>
+        <h3>Custom Apps for Business</h3>
+        <p>Android apps for small businesses and field teams — proof, records and reports without the paperwork, designed for the phones people already use.</p>
       </div>
       <div class="card">
         <div class="icon" style="background:rgba(77,212,255,.15)">🏛️</div>
         <h3>Tools for Urban Local Bodies</h3>
-        <p>Digital and AI-assisted tools for municipal corporations and councils, such as field surveys, photo documentation and reporting, built with a deep understanding of how civic programmes run on the ground.</p>
+        <p>Digital and AI-assisted tools for municipal corporations and councils — field surveys, photo documentation and reporting — built with a deep understanding of how civic programmes run on the ground.</p>
+      </div>
+      <div class="card">
+        <div class="icon" style="background:rgba(138,107,255,.18)">📚</div>
+        <h3>Books &amp; KDP Design</h3>
+        <p>Coloring books for kids and adults, illustrated storybooks, and print-ready interiors and covers designed for Amazon KDP.</p>
+      </div>
+      <div class="card">
+        <div class="icon" style="background:rgba(255,204,51,.15)">⚡</div>
+        <h3>AI-assisted Development</h3>
+        <p>AI is at the core of how we work — the newest models and tools at every stage, so a small team ships high-quality products quickly. Every result is reviewed and refined by people before it ships.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="ai" class="alt">
-  <div class="wrap">
-    <span class="pill">How we build</span>
-    <h2>Built with the latest AI tools</h2>
-    <p class="sub">AI is at the core of how we work. We keep up with the newest AI models and tools, and use them at every stage, so a small team can ship high-quality games, apps and books quickly. Every result is reviewed and refined by people before it ships.</p>
-    <div class="grid">
-      <div class="card">
-        <div class="icon" style="background:rgba(77,212,255,.15)">⚡</div>
-        <h3>AI-assisted development</h3>
-        <p>Modern AI coding assistants help us design, write, test and improve our game and app code faster.</p>
-      </div>
-      <div class="card">
-        <div class="icon" style="background:rgba(255,92,138,.15)">🎨</div>
-        <h3>AI-assisted design</h3>
-        <p>AI tools speed up concept art, layouts, coloring-page ideas and story drafts, which our team then polishes by hand.</p>
-      </div>
-      <div class="card">
-        <div class="icon" style="background:rgba(255,204,51,.15)">🔄</div>
-        <h3>Always up to date</h3>
-        <p>We continuously try new AI releases and adopt the ones that make our products better for players, readers and partners.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="games">
-  <div class="wrap product">
-    <div>
-      <span class="pill">Our first game</span>
-      <h2>Sequex: Number Puzzle</h2>
-      <p>Draw a single path through the grid and pass every numbered checkpoint in order. Simple rules, satisfying solutions, and puzzles that grow with you. Works fully offline.</p>
-      <a class="u" href="/sequex/">Game website &amp; privacy policy →</a>
-    </div>
-    <div class="board" aria-hidden="true">
-      <b class="n">1</b><b class="p"></b><b class="p"></b><b></b><b></b>
-      <b></b><b></b><b class="p"></b><b></b><b></b>
-      <b></b><b class="p"></b><b class="n">2</b><b></b><b></b>
-      <b></b><b class="p"></b><b></b><b></b><b></b>
-      <b></b><b class="p"></b><b class="p"></b><b class="p"></b><b class="n">3</b>
-    </div>
-  </div>
-</section>
-
-<section id="books" class="alt">
+<section id="books">
   <div class="wrap">
     <h2>Books for every age</h2>
     <p class="sub">We write, illustrate and design books that invite people to slow down, color, and imagine.</p>
@@ -210,10 +281,20 @@
   </div>
 </section>
 
+<section id="about" class="alt">
+  <div class="wrap about">
+    <span class="pill">About</span>
+    <h2>Foundry Enterprises</h2>
+    <p><strong>SEQUEX is the product brand of Foundry Enterprises</strong>, an MSME-registered firm from Nevasa, Ahilyanagar, Maharashtra, founded in February 2026.</p>
+    <p>We build software the way the field teaches us: find a real problem, build the simplest thing that solves it, put it in real users' hands, and let their feedback shape the next version. Our apps are in daily use — from a one-lakh-household municipal survey to a working petrol pump.</p>
+    <p>New apps and services are added here as they ship — this page grows with the studio.</p>
+  </div>
+</section>
+
 <section id="contact">
   <div class="wrap">
     <h2>Contact</h2>
-    <p class="sub">For partnerships, municipal projects, book design work, or feedback on our games, apps and books.</p>
+    <p class="sub">For partnerships, municipal projects, custom app work, book design, or feedback on our apps and games.</p>
     <div class="contact">
       <div class="card">
         <div class="label">Email</div>
@@ -234,7 +315,11 @@
 <footer>
   <div class="wrap">
     <span>© <span id="y">2026</span> SEQUEX is a brand of <strong>Foundry Enterprises</strong> (Proprietorship), Nevasa, Ahilyanagar, Maharashtra.<br>MSME Udyam Registration No. UDYAM-MH-01-0284229</span>
-    <span>sequex.co.in</span>
+    <span class="flinks">
+      <a href="/sequex/">Number Puzzle</a>
+      <a href="/gullycaptain-privacy/">GullyCaptain Privacy</a>
+      <a href="/green-india-iec-expert/">Careers — IEC Expert</a>
+    </span>
   </div>
 </footer>
 
