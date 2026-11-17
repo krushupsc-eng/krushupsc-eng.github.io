@@ -1,0 +1,11 @@
+# The matrimonial biodata page is private (shared by link only).
+# Keep it out of search engines and AI crawlers; all other pages stay indexable.
+User-agent: *
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: CCBot
+User-agent: Google-Extended
+User-agent: anthropic-ai
+User-agent: Meta-ExternalAgent
+User-agent: Bytespider
+Disallow: /gitanjali-dhokane-biodata.html
