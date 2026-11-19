@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SEQUEX — Apps, Games & Books by Foundry Enterprises</title>
-<meta name="description" content="SEQUEX is the app and game studio of Foundry Enterprises, Maharashtra. Practical Android apps for contractors, petrol pumps, field teams, election candidates and gully cricket — plus puzzle games and books on Amazon KDP.">
+<title>SEQUEX — ULB Partnerships, Municipal Projects & Apps | Foundry Enterprises</title>
+<meta name="description" content="SEQUEX is the brand of Foundry Enterprises, Maharashtra. Our main business: ULB partnerships and municipal projects — connecting Urban Local Bodies with credible contractors across Maharashtra — plus practical Android apps for contractors, petrol pumps and field teams.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -22,6 +23,7 @@
 
   header{position:sticky;top:0;z-index:10;background:rgba(13,15,26,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
   nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo-mark{width:34px;height:34px;flex:0 0 34px}
   .logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px;letter-spacing:2px;display:flex;align-items:center;gap:10px}
   .dots{display:grid;grid-template-columns:repeat(2,9px);gap:3px}
   .dots i{width:9px;height:9px;border-radius:2px;display:block}
@@ -49,15 +51,6 @@
   h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(28px,4vw,38px);margin-bottom:12px}
   .sub{color:var(--muted);max-width:640px;margin-bottom:44px}
   .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
-  .books{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-  .book{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px;display:flex;gap:20px;align-items:flex-start}
-  .cover{flex:0 0 74px;height:100px;border-radius:6px 10px 10px 6px;position:relative;box-shadow:inset 6px 0 0 rgba(0,0,0,.25)}
-  .cover.a{background:linear-gradient(135deg,var(--c1),var(--c2))}
-  .cover.b{background:linear-gradient(135deg,var(--c3),var(--c4))}
-  .cover:after{content:"";position:absolute;left:16px;right:10px;top:18px;height:6px;border-radius:3px;background:rgba(255,255,255,.7)}
-  .book h3{font-family:'Space Grotesk',sans-serif;font-size:20px;margin-bottom:6px}
-  .book p{color:var(--muted);font-size:15px}
-  .kdp{margin-top:22px;color:var(--muted);font-size:15px}
   .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px}
   .icon{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;font-size:22px;margin-bottom:18px}
   .card h3{font-family:'Space Grotesk',sans-serif;font-size:20px;margin-bottom:8px}
@@ -102,11 +95,11 @@
 
 <header>
   <nav class="wrap">
-    <a href="#" class="logo"><span class="dots"><i></i><i></i><i></i><i></i></span>SEQUEX</a>
+    <a href="#" class="logo"><svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true"><rect x="1" y="1" width="62" height="62" rx="12" fill="#12284B" stroke="#C9A227" stroke-width="2"/><rect x="14" y="13" width="36" height="5" rx="2" fill="#C9A227"/><rect x="18" y="23" width="6" height="22" rx="2" fill="#FFFFFF"/><rect x="29" y="23" width="6" height="22" rx="2" fill="#FFFFFF"/><rect x="40" y="23" width="6" height="22" rx="2" fill="#FFFFFF"/><rect x="14" y="49" width="36" height="5" rx="2" fill="#C9A227"/></svg>SEQUEX</a>
     <div class="links">
-      <a href="#apps">Apps</a>
+      <a href="#partnerships">Partnerships</a>
       <a href="#services">Services</a>
-      <a href="#books">Books</a>
+      <a href="#apps">Apps</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </div>
@@ -115,17 +108,44 @@
 
 <div class="hero">
   <div class="wrap">
-    <span class="tag">Foundry Enterprises · Apps · Games · Books · Civic Tech</span>
-    <h1>Practical apps for <span>the field, the counter</span> and everyday life.</h1>
-    <p class="lead">SEQUEX is the app and game studio of Foundry Enterprises, from Nevasa, Maharashtra. We turn real on-ground problems — a contractor's billing evidence, a petrol pump's daily shift, a candidate's voter list, a gully cricket match — into simple Android apps that work offline, in English, मराठी and हिन्दी.</p>
+    <span class="tag">Foundry Enterprises · ULB Partnerships · Municipal Projects · Apps</span>
+    <h1>Government projects get done when <span>the right contractor</span> meets the right ULB.</h1>
+    <p class="lead">SEQUEX is the brand of Foundry Enterprises, from Nevasa, Maharashtra. Our main business is municipal projects: we work with Urban Local Bodies across Maharashtra and connect them with credible, verified contractors — for solid waste, biomining, water, roads and more. We also build practical Android apps for the field work we know from the ground.</p>
     <div class="cta">
-      <a href="#apps" class="btn primary">See our apps</a>
-      <a href="mailto:krushna@sequex.co.in" class="btn ghost">Get in touch</a>
+      <a href="/ulb-partnerships/" class="btn primary">Join the Contractor Network</a>
+      <a href="/ulb-partnerships/#for-ulbs" class="btn ghost">I represent a ULB</a>
     </div>
   </div>
 </div>
 
-<section id="apps">
+<section id="partnerships">
+  <div class="wrap">
+    <h2>Our main business: ULB Partnerships</h2>
+    <p class="sub">Municipal work is where we earn. We are on the ground with Municipal Corporations, Councils and Nagar Panchayats every week — and we run a verified network of contractors and companies that ULBs can trust with their work.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="icon" style="background:rgba(77,212,255,.15)">🤝</div>
+        <h3>For Contractors &amp; Companies</h3>
+        <p>Matched tender alerts, structured introductions to ULBs, JV and consortium support, and ground intelligence before you bid — across all municipal work categories.</p>
+      </div>
+      <div class="card">
+        <div class="icon" style="background:rgba(255,204,51,.15)">🏛️</div>
+        <h3>For ULBs &amp; Representatives</h3>
+        <p>Credible contractors for specialist work and re-issued tenders, wider pre-bid reach, and IEC, capacity-building and documentation support for mission competitions.</p>
+      </div>
+      <div class="card">
+        <div class="icon" style="background:rgba(255,92,138,.15)">♻️</div>
+        <h3>Core Strength: SBM-U &amp; Solid Waste</h3>
+        <p>IEC, capacity building, collection &amp; transport, processing, biomining and dumpsite remediation, CT/PT — delivered under Swachh Bharat Mission — Urban 2.0.</p>
+      </div>
+    </div>
+    <div class="cta" style="margin-top:32px">
+      <a href="/ulb-partnerships/" class="btn primary">Explore ULB Partnerships</a>
+    </div>
+  </div>
+</section>
+
+<section id="apps" class="alt">
   <div class="wrap">
     <h2>Our apps</h2>
     <p class="sub">Every app starts as a real problem faced by real people, gets tested with them in the field, and keeps improving from their feedback.</p>
@@ -180,20 +200,6 @@
         </div>
       </article>
 
-      <article class="app-card">
-        <div class="app-head">
-          <div class="icon" style="background:rgba(138,107,255,.18)">🏏</div>
-          <div>
-            <h3>GullyCaptain</h3>
-            <div class="for">For gully &amp; box cricket teams</div>
-          </div>
-        </div>
-        <p>Scoring and management for gully and box cricket: start a match in under a minute, score ball by ball fully offline, and run tournaments with points tables and player stats.</p>
-        <div class="app-foot">
-          <span class="badge soon">Coming soon on Google Play</span>
-          <a class="app-link" href="/gullycaptain-privacy/">Privacy policy →</a>
-        </div>
-      </article>
 
       <article class="app-card">
         <div class="app-head">
@@ -231,7 +237,7 @@
 <section id="services" class="alt">
   <div class="wrap">
     <h2>What we do</h2>
-    <p class="sub">Alongside our own products, we build software and content for businesses, institutions and civic programmes.</p>
+    <p class="sub">Municipal projects come first. Alongside them, we build software for businesses, institutions and civic programmes.</p>
     <div class="grid">
       <div class="card">
         <div class="icon" style="background:rgba(255,92,138,.15)">📱</div>
@@ -244,9 +250,9 @@
         <p>Digital and AI-assisted tools for municipal corporations and councils — field surveys, photo documentation and reporting — built with a deep understanding of how civic programmes run on the ground.</p>
       </div>
       <div class="card">
-        <div class="icon" style="background:rgba(138,107,255,.18)">📚</div>
-        <h3>Books &amp; KDP Design</h3>
-        <p>Coloring books for kids and adults, illustrated storybooks, and print-ready interiors and covers designed for Amazon KDP.</p>
+        <div class="icon" style="background:rgba(138,107,255,.18)">🤝</div>
+        <h3>ULB Partnerships &amp; Contractor Network</h3>
+        <p>Our main business: connecting Urban Local Bodies with verified contractors, and helping contractors find the right municipal work across Maharashtra.</p>
       </div>
       <div class="card">
         <div class="icon" style="background:rgba(255,204,51,.15)">⚡</div>
@@ -257,35 +263,12 @@
   </div>
 </section>
 
-<section id="books">
-  <div class="wrap">
-    <h2>Books for every age</h2>
-    <p class="sub">We write, illustrate and design books that invite people to slow down, color, and imagine.</p>
-    <div class="books">
-      <div class="book">
-        <div class="cover a" aria-hidden="true"></div>
-        <div>
-          <h3>Coloring Books</h3>
-          <p>Relaxing coloring books for adults and fun, easy-to-color pages for kids, from cozy scenes to calming patterns.</p>
-        </div>
-      </div>
-      <div class="book">
-        <div class="cover b" aria-hidden="true"></div>
-        <div>
-          <h3>Storybooks</h3>
-          <p>Illustrated picture books for children with warm characters and gentle lessons, made to be read aloud together.</p>
-        </div>
-      </div>
-    </div>
-    <p class="kdp">Our books are published through Amazon Kindle Direct Publishing (KDP). We also create KDP-ready designs, including interiors, covers and coloring pages.</p>
-  </div>
-</section>
 
 <section id="about" class="alt">
   <div class="wrap about">
     <span class="pill">About</span>
     <h2>Foundry Enterprises</h2>
-    <p><strong>SEQUEX is the product brand of Foundry Enterprises</strong>, an MSME-registered firm from Nevasa, Ahilyanagar, Maharashtra, founded in February 2026.</p>
+    <p><strong>SEQUEX is the brand of Foundry Enterprises</strong>, an MSME-registered firm from Nevasa, Ahilyanagar, Maharashtra, founded in February 2026. Our main business is municipal projects and ULB partnerships; our apps grow out of that same field work.</p>
     <p>We build software the way the field teaches us: find a real problem, build the simplest thing that solves it, put it in real users' hands, and let their feedback shape the next version. Our apps are in daily use — from a one-lakh-household municipal survey to a working petrol pump.</p>
     <p>New apps and services are added here as they ship — this page grows with the studio.</p>
   </div>
@@ -294,7 +277,7 @@
 <section id="contact">
   <div class="wrap">
     <h2>Contact</h2>
-    <p class="sub">For partnerships, municipal projects, custom app work, book design, or feedback on our apps and games.</p>
+    <p class="sub">For ULB partnerships, municipal projects, contractor network registration, custom app work, or feedback on our apps.</p>
     <div class="contact">
       <div class="card">
         <div class="label">Email</div>
@@ -317,7 +300,6 @@
     <span>© <span id="y">2026</span> SEQUEX is a brand of <strong>Foundry Enterprises</strong> (Proprietorship), Nevasa, Ahilyanagar, Maharashtra.<br>MSME Udyam Registration No. UDYAM-MH-01-0284229</span>
     <span class="flinks">
       <a href="/sequex/">Number Puzzle</a>
-      <a href="/gullycaptain-privacy/">GullyCaptain Privacy</a>
       <a href="/green-india-iec-expert/">Careers — IEC Expert</a>
     </span>
   </div>

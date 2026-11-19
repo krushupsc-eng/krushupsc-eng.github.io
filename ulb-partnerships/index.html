@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ULB Partnerships — Connecting Municipal Bodies with Credible Contractors | SEQUEX · Foundry Enterprises</title>
+<meta name="description" content="Foundry Enterprises (SEQUEX) connects Urban Local Bodies across Maharashtra with credible, experienced contractors — and helps contractors find the right municipal work. Solid waste, water, roads, environment and more.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0d0f1a; --bg2:#151829; --card:#1b1f35; --line:#2a2f4d;
+    --text:#eef0fb; --muted:#a3a8c7;
+    --c1:#ffcc33; --c2:#ff5c8a; --c3:#4dd4ff; --c4:#8a6bff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+  header{position:sticky;top:0;z-index:10;background:rgba(13,15,26,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo-mark{width:34px;height:34px;flex:0 0 34px}
+  .logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px;letter-spacing:2px;display:flex;align-items:center;gap:10px}
+  .dots{display:grid;grid-template-columns:repeat(2,9px);gap:3px}
+  .dots i{width:9px;height:9px;border-radius:2px;display:block}
+  .dots i:nth-child(1){background:var(--c1)}.dots i:nth-child(2){background:var(--c2)}
+  .dots i:nth-child(3){background:var(--c3)}.dots i:nth-child(4){background:var(--c4)}
+  .links{display:flex;gap:26px;font-size:15px;color:var(--muted)}
+  .links a:hover{color:var(--text)}
+
+  .hero{padding:96px 0 80px;position:relative;overflow:hidden}
+  .hero:before{content:"";position:absolute;inset:0;background:
+    radial-gradient(500px 300px at 85% 20%,rgba(77,212,255,.22),transparent 70%),
+    radial-gradient(400px 260px at 10% 90%,rgba(255,204,51,.13),transparent 70%);pointer-events:none}
+  .tag{display:inline-block;font-size:13px;font-weight:600;color:var(--c3);border:1px solid rgba(77,212,255,.35);border-radius:999px;padding:5px 14px;margin-bottom:22px}
+  h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(34px,6vw,58px);line-height:1.1;max-width:840px}
+  h1 span{background:linear-gradient(90deg,var(--c3),var(--c1));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lead{font-size:clamp(16px,2vw,19px);color:var(--muted);max-width:700px;margin-top:22px}
+  .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+  .btn{padding:13px 24px;border-radius:10px;font-weight:600;font-size:15px;display:inline-block}
+  .btn.primary{background:var(--text);color:var(--bg)}
+  .btn.ghost{border:1px solid var(--line);color:var(--text)}
+  .btn:hover{opacity:.88}
+
+  section{padding:80px 0}
+  .alt{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(28px,4vw,38px);margin-bottom:12px}
+  .sub{color:var(--muted);max-width:680px;margin-bottom:44px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+  .grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px}
+  .icon{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;font-size:22px;margin-bottom:18px}
+  .card h3{font-family:'Space Grotesk',sans-serif;font-size:20px;margin-bottom:8px}
+  .card p{color:var(--muted);font-size:15px}
+  .card ul{color:var(--muted);font-size:15px;padding-left:18px}
+  .card li{margin-bottom:6px}
+
+  .areas{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+  .area{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;font-size:15px}
+  .area strong{display:block;font-family:'Space Grotesk',sans-serif;font-size:16px;margin-bottom:4px}
+  .area span{color:var(--muted);font-size:14px}
+
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;counter-reset:step}
+  .step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px}
+  .step .n{font-family:'Space Grotesk',sans-serif;font-size:30px;font-weight:700;color:var(--c3);margin-bottom:10px}
+  .step h3{font-family:'Space Grotesk',sans-serif;font-size:18px;margin-bottom:8px}
+  .step p{color:var(--muted);font-size:15px}
+
+  .note{border:1px solid rgba(255,204,51,.35);background:rgba(255,204,51,.07);border-radius:14px;padding:22px 26px;color:var(--muted);font-size:15px;max-width:820px}
+  .note strong{color:var(--text)}
+
+  .pill{display:inline-block;font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px;background:rgba(77,212,255,.15);color:var(--c3);margin-bottom:14px}
+  .about p{color:var(--muted);max-width:720px;margin-bottom:16px;font-size:16px}
+  .about p strong{color:var(--text)}
+
+  .contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+  .contact .card a{color:var(--c1);font-weight:600;word-break:break-word}
+  .label{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+
+  footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  footer .flinks{display:flex;gap:18px;flex-wrap:wrap}
+  footer .flinks a:hover{color:var(--text)}
+
+  @media (max-width:760px){
+    .links{display:none}
+    .hero{padding:64px 0 56px}
+    section{padding:60px 0}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="/" class="logo"><svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true"><rect x="1" y="1" width="62" height="62" rx="12" fill="#12284B" stroke="#C9A227" stroke-width="2"/><rect x="14" y="13" width="36" height="5" rx="2" fill="#C9A227"/><rect x="18" y="23" width="6" height="22" rx="2" fill="#FFFFFF"/><rect x="29" y="23" width="6" height="22" rx="2" fill="#FFFFFF"/><rect x="40" y="23" width="6" height="22" rx="2" fill="#FFFFFF"/><rect x="14" y="49" width="36" height="5" rx="2" fill="#C9A227"/></svg>SEQUEX</a>
+    <div class="links">
+      <a href="#for-contractors">For Contractors</a>
+      <a href="#for-ulbs">For ULBs</a>
+      <a href="#work-areas">Work Areas</a>
+      <a href="#how">How It Works</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <span class="tag">Foundry Enterprises · ULB Partnerships · Maharashtra</span>
+    <h1>Connecting Urban Local Bodies with <span>credible contractors</span> — and contractors with the right municipal work.</h1>
+    <p class="lead">We work on the ground with Municipal Corporations, Municipal Councils and Nagar Panchayats across Maharashtra. ULBs regularly need experienced, reliable execution partners — and good contractors regularly miss the right opportunities. We bring both sides together, in the open, through the official process.</p>
+    <div class="cta">
+      <a href="#for-contractors" class="btn primary">Join the Contractor Partner Network</a>
+      <a href="#for-ulbs" class="btn ghost">I represent a ULB</a>
+    </div>
+  </div>
+</div>
+
+<section id="for-contractors">
+  <div class="wrap">
+    <h2>For contractors &amp; companies</h2>
+    <p class="sub">Maharashtra has 423 ULBs and thousands of municipal tenders every year. Most are won by whoever heard about them in time and understood the ground. That is the gap we close for our partners.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="icon" style="background:rgba(77,212,255,.15)">🔔</div>
+        <h3>Matched tender alerts</h3>
+        <p>We track municipal tenders daily. Partners receive alerts matched to their work category, capacity and districts — not a flood of irrelevant notices.</p>
+      </div>
+      <div class="card">
+        <div class="icon" style="background:rgba(255,204,51,.15)">🤝</div>
+        <h3>Introductions that matter</h3>
+        <p>Structured introductions and meetings with ULB decision-makers, arranged properly — so your capability is understood before you bid.</p>
+      </div>
+      <div class="card">
+        <div class="icon" style="background:rgba(255,92,138,.15)">🧩</div>
+        <h3>JV &amp; consortium support</h3>
+        <p>Too small alone for a big tender, or missing one eligibility piece? We connect complementary partners for joint ventures and consortium bids.</p>
+      </div>
+      <div class="card">
+        <div class="icon" style="background:rgba(138,107,255,.18)">📍</div>
+        <h3>Ground intelligence</h3>
+        <p>What is the actual site condition, payment pattern and competition in that ULB? Our on-ground network helps you bid with open eyes.</p>
+      </div>
+    </div>
+    <div class="cta" style="margin-top:36px">
+      <a href="https://wa.me/917517758777?text=I%20want%20to%20join%20the%20SEQUEX%20Contractor%20Partner%20Network" class="btn primary" target="_blank" rel="noopener">Register as a Partner on WhatsApp</a>
+      <a href="mailto:krushna@sequex.co.in?subject=Contractor%20Partner%20Network%20—%20Registration" class="btn ghost">Register by Email</a>
+    </div>
+    <p style="color:var(--muted);font-size:14px;margin-top:14px">Message us your company name, work categories and districts — we will send you the partner registration form and complete your verification.</p>
+  </div>
+</section>
+
+<section id="for-ulbs" class="alt">
+  <div class="wrap">
+    <h2>For ULBs, officers &amp; elected representatives</h2>
+    <p class="sub">A tender with no bidders, or the wrong bidder, costs a city months. Our partner network helps your ULB reach capable contractors before the tender closes — not after it fails.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="icon" style="background:rgba(77,212,255,.15)">🔁</div>
+        <h3>Failed &amp; re-issued tenders</h3>
+        <p>Tender published twice with no response? We identify why — and bring qualified contractors in that category to the re-issued tender.</p>
+      </div>
+      <div class="card">
+        <div class="icon" style="background:rgba(255,204,51,.15)">🎯</div>
+        <h3>Specialist work, right specialists</h3>
+        <p>Biomining, processing plants, IEC campaigns, surveys — niche work needs niche experience. We match the work to contractors who have actually done it.</p>
+      </div>
+      <div class="card">
+        <div class="icon" style="background:rgba(255,92,138,.15)">📣</div>
+        <h3>Wider pre-bid reach</h3>
+        <p>We circulate your live tenders to verified partners in the relevant category and districts, so your ULB gets real competition and better rates.</p>
+      </div>
+      <div class="card">
+        <div class="icon" style="background:rgba(138,107,255,.18)">🏆</div>
+        <h3>Competition &amp; documentation support</h3>
+        <p>For mission competitions and assessments — HBT Nagari Lokkalyan Abhiyan, Swachh Survekshan and similar — we support IEC, capacity building and documentation through experienced partners.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work-areas">
+  <div class="wrap">
+    <h2>Work areas we cover</h2>
+    <p class="sub">Our core strength is solid waste and SBM-U work. Our partner network spans the full range of municipal work — register in your category, whatever it is.</p>
+    <div class="areas">
+      <div class="area"><strong>Solid Waste — Collection &amp; Transport</strong><span>Door-to-door collection, secondary transport, sweeping</span></div>
+      <div class="area"><strong>Processing &amp; Treatment</strong><span>MRF, composting, bio-methanation, CBG, RDF</span></div>
+      <div class="area"><strong>Biomining &amp; Dumpsite Remediation</strong><span>Legacy waste mining, land reclamation</span></div>
+      <div class="area"><strong>IEC &amp; Capacity Building</strong><span>SBM-U IEC campaigns, training, documentation</span></div>
+      <div class="area"><strong>Public Toilets — CT / PT</strong><span>Construction, O&amp;M, FSTP</span></div>
+      <div class="area"><strong>Water Supply &amp; Sewerage</strong><span>WTP, STP, networks, AMRUT works</span></div>
+      <div class="area"><strong>Roads, Drains &amp; Buildings</strong><span>Civil works, storm water, municipal buildings</span></div>
+      <div class="area"><strong>Street Lighting &amp; Electrical</strong><span>LED conversion, O&amp;M, electrical works</span></div>
+      <div class="area"><strong>Environment &amp; NCAP</strong><span>Air quality, dust mitigation, green belts, lakes</span></div>
+      <div class="area"><strong>Surveys, GIS &amp; Consultancy</strong><span>Household &amp; property surveys, DPRs, PMC</span></div>
+      <div class="area"><strong>Vehicles, Machinery &amp; Supply</strong><span>Compactors, equipment, material supply</span></div>
+      <div class="area"><strong>Manpower &amp; Facility Services</strong><span>Staffing, O&amp;M contracts, facility management</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="alt">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <p class="sub">Simple, documented and transparent — the same four steps for everyone.</p>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Register / Share the requirement</h3><p>Contractors register their company, experience and capacity. ULBs share the work they need executed.</p></div>
+      <div class="step"><div class="n">2</div><h3>Verification</h3><p>We check track record, past work orders and capacity. Only credible partners are put forward.</p></div>
+      <div class="step"><div class="n">3</div><h3>Matching &amp; introduction</h3><p>The right partners are matched to the right work and introduced formally to the ULB.</p></div>
+      <div class="step"><div class="n">4</div><h3>Bid &amp; execute — officially</h3><p>Selection always happens through the ULB's official tender process. Our facilitation terms are agreed in writing, in advance.</p></div>
+    </div>
+    <div class="note" style="margin-top:36px">
+      <strong>Our commitment:</strong> We do not guarantee any tender award, and we do not influence any official decision. We widen participation, improve matching and support documentation — selection is always by the ULB, on merit, through its official process.
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <span class="pill">Who we are</span>
+    <h2>On the ground, every week</h2>
+    <p><strong>Krushna Dhokane</strong>, Founder of Foundry Enterprises (SEQUEX), works in business development and operations for municipal services under Swachh Bharat Mission — Urban 2.0, including IEC, capacity building and solid waste projects delivered to ULBs through Green India Service Provider Pvt. Ltd.</p>
+    <p>That daily work means regular meetings with municipal officers, Commissioners, Chief Officers, Mayors, Presidents and elected representatives — and a clear view of where good projects stall for want of a good contractor. This network exists to fix exactly that.</p>
+  </div>
+</section>
+
+<section id="contact" class="alt">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p class="sub">ULBs with a requirement, and contractors who want to join the network — reach out directly.</p>
+    <div class="contact">
+      <div class="card">
+        <div class="label">Email</div>
+        <a href="mailto:krushna@sequex.co.in">krushna@sequex.co.in</a>
+      </div>
+      <div class="card">
+        <div class="label">Phone / WhatsApp</div>
+        <a href="tel:+917517758777">+91 75177 58777</a>
+      </div>
+      <div class="card">
+        <div class="label">Location</div>
+        <p>Nevasa, Ahilyanagar<br>Maharashtra, India<br>Working across Maharashtra</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="y">2026</span> SEQUEX is a brand of <strong>Foundry Enterprises</strong> (Proprietorship), Nevasa, Ahilyanagar, Maharashtra.<br>MSME Udyam Registration No. UDYAM-MH-01-0284229</span>
+    <span class="flinks">
+      <a href="/">Our Apps</a>
+      <a href="/green-india-iec-expert/">Careers — IEC Expert</a>
+    </span>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
