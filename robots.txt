@@ -1,5 +1,5 @@
-# The matrimonial biodata page is private (shared by link / QR only).
-# Keep it out of search engines and AI crawlers; all other pages stay indexable.
+# The matrimonial biodata pages are private (shared by link / QR only).
+# Keep them out of search engines and AI crawlers; all other pages stay indexable.
 User-agent: *
 User-agent: GPTBot
 User-agent: ChatGPT-User
@@ -42,3 +42,4 @@ User-agent: peer39_crawler
 User-agent: TurnitinBot
 User-agent: Timpibot
 Disallow: /gitanjali-dhokane-biodata.html
+Disallow: /varsha-dhokane-biodata.html
